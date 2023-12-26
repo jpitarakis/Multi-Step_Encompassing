@@ -1,2 +1,6 @@
-This folder contains the data and code used in the Application of the paper. The data file is in excel format and named WB_HCPI_Q.xlsx. 
+This folder contains the data and code used in the Application of the paper. The data file is in excel 
+format and named WB_HCPI_Q.xlsx. The main program file that replicates results is Application_HCPIQ.m. 
+The two key files that are called are "recursive_hstep_fast.m" which computes the recursive forecast errors
+associated with the competing models and "pred_encompass_dnorm.m" which implements the test statistic 
+and outputs its pvalues.
 
