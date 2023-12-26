@@ -1,0 +1,5 @@
+This folder contains the codes used to obtain the empricial size and power estimates associated with DGP2.
+The main program files used to obtain size estimates are "Size_DGP_2.m" and "Power_DGP_2.m". 
+The two key files that are called are "recursive_hstep_fast.m" which computes the recursive forecast 
+errors associated with the competing models and "pred_encompass_dnorm.m" which implements the test statistic 
+and outputs its pvalues. The remainder files allow for alternative long run variance estimators. 
