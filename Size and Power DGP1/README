@@ -1,1 +1,2 @@
-This file contains the codes used to obtain the Monte-Carlo simulations associated with DGP1 (size and power) 
+This file contains the codes used to obtain the Monte-Carlo simulations associated with DGP1a and DGP1b (size and power). The main program files are "Size_DGP_1a.m" and 
+"Size_DGP_1b.m" for size experiments and "Power_DGP_1a.m" and "Power_DGP_1b.m" for power experiments. 
