@@ -1,4 +1,4 @@
-function [T1,T1_nw,T1_alrv,T1_d,T1_d_nw,T1_d_alrv]=pred_encompass_dnorm(e1hat,e2hat,mu0)
+function [T1,T1_alrv,T1_d,T1_d_alrv]=pred_encompass_dnorm(e1hat,e2hat,mu0)
 
 % e1hat: n by 1 vector of out of sample forecast errors from model 1
 % e2hat: n by 1 vector of out of sample forecast errors from model 2
@@ -32,11 +32,11 @@ phihatsq_nw = covnw(e2sq_demean,nw_lags,1);
 phihatsq_alrv = andrews_lrv(e2sq_demean);
 
 T1 = sqrt(n)*mean(d)/sqrt(fm*phihatsq);
-T1_nw = sqrt(n)*mean(d)/sqrt(fm*phihatsq_nw);
+
 T1_alrv = sqrt(n)*mean(d)/sqrt(fm*phihatsq_alrv);
 
 T1_d = sqrt(n)*mean(d)/sqrt(sigsq_d);
-T1_d_nw = sqrt(n)*mean(d)/sqrt(sigsq_d_nw);
+
 T1_d_alrv = sqrt(n)*mean(d)/sqrt(sigsq_d_alrv);
 
 
